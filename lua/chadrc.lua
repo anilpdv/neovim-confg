@@ -3,7 +3,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "nightowl",
+  theme = "rxyhn",
   hl_override = {
     -- Folders - Enhanced hierarchy with Catppuccin colors
     NvimTreeFolderName = { fg = "#89b4fa", bold = true }, -- Catppuccin blue

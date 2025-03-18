@@ -11,7 +11,6 @@ local options = {
     typescriptreact = { "prettier" },
 
     -- Web
-    html = { "prettier" },
     css = { "prettier" },
     json = { "prettier" },
     yaml = { "prettier" },

@@ -393,11 +393,6 @@ return {
     },
   },
   {
-    "iamcco/markdown-preview.nvim",
-    ft = "markdown",
-    build = "cd app && npm install",
-  },
-  {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
@@ -434,26 +429,7 @@ return {
     })
   end
 },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons",
-      "MunifTanjim/nui.nvim",
-    },
-    config = function()
-      require("neo-tree").setup({
-        close_if_last_window = true,
-        window = {
-          width = 30,
-          mappings = {
-            ["<C-e>"] = "close_window"
-          }
-        }
-      })
-    end
-  },
+
   {
     "goolord/alpha-nvim",
     config = function()
@@ -528,5 +504,10 @@ return {
         scope = { show_start = false }
       })
     end
+  },
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5', -- Recommended
+    lazy = false,   -- This plugin is already lazy
   }
 }
